@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-16T20:10:46Z" name="Default suite" finished-at="2023-01-16T20:10:48Z" duration-ms="1141">
+    <groups>
+    </groups>
+    <test started-at="2023-01-16T20:10:46Z" name="Default test" finished-at="2023-01-16T20:10:48Z" duration-ms="1141">
+      <class name="com.httpGetTest.GetCallTest">
+        <test-method signature="postcall()[pri:0, instance:com.httpGetTest.GetCallTest@78aa1f72]" started-at="2023-01-16T12:10:46Z" name="postcall" finished-at="2023-01-16T12:10:48Z" duration-ms="1111" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Attempted read from closed stream.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Attempted read from closed stream.
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:165)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:135)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:270)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:313)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:227)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:270)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:290)
+	at com.httpGet.PostCall.responsebody(PostCall.java:52)
+	at com.httpGetTest.GetCallTest.postcall(GetCallTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcall -->
+      </class> <!-- com.httpGetTest.GetCallTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
