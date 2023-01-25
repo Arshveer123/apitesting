@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+
+
 import org.apache.http.Header;
 import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
@@ -22,7 +24,7 @@ public class GetCall {
 	String url = "https://reqres.in/";
 	String resource = "/api/users?page=2";
 	String serviceUrl = url + resource;
-	
+	//new changes
 
 	public CloseableHttpResponse getCall() throws ClientProtocolException, IOException {
 
