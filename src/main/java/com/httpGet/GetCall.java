@@ -24,10 +24,10 @@ public class GetCall {
 	String url = "https://reqres.in/";
 	String resource = "/api/users?page=2";
 	String serviceUrl = url + resource;
-	//new changes
+	
 
 	public CloseableHttpResponse getCall() throws ClientProtocolException, IOException {
-
+//httpgetcall
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 
 		HttpGet httpGet = new HttpGet(serviceUrl);
